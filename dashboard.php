@@ -1,6 +1,6 @@
 <?php 
 // dashboard.php (Página de Administración)
-include_once('conexion.php');
+include_once 'conexion.php';
 // NOTA: Asegúrate que header.php incluya Bootstrap 5 CSS y los archivos JS
 // También incluye las etiquetas <body> y <div class="container mt-5"> o similar
 include('includes/header.php'); 
