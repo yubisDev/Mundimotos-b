@@ -1,0 +1,66 @@
+/* Paleta de Colores para Dark Mode (Asegúrate de que estas variables existan) */
+:root {
+    --dark-background: #121212;
+    --dark-card-bg: #1e1e1e;
+    --dark-nav-bg: #2a2a2a; 
+    --dark-border-color: #383838;
+    --primary-color: #0d6efd; 
+}
+
+/* ------------------------------------ */
+/* ESTILOS GLOBALES DE TEMA OSCURO */
+/* ------------------------------------ */
+
+/* Fondo del Body */
+body.bg-dark {
+    background-color: var(--dark-background) !important;
+    color: #f8f9fa; /* Color de texto general claro */
+}
+
+/* 👉 AÑADIR/VERIFICAR: Las etiquetas (labels) deben ser claras. */
+.form-label {
+    color: #f8f9fa !important;
+}
+
+/* 👉 AÑADIR/VERIFICAR: El texto de ayuda (form-text) debe ser claro/secundario. */
+.form-text {
+    color: #adb5bd !important;
+}
+
+/* 👉 AÑADIR/VERIFICAR: Asegurar que el texto dentro de las tarjetas sea claro. */
+.card {
+    color: #f8f9fa;
+}
+
+/* Estilo de Tarjetas/Contenedores */
+.custom-dark-bg-card {
+    background-color: var(--dark-card-bg); 
+    border: 1px solid var(--dark-border-color);
+}
+
+/* Estilo para inputs y textareas en tema oscuro */
+.form-control, .form-select {
+    background-color: #2a2a2a; /* Fondo del input más oscuro que el card */
+    color: #f8f9fa; /* ESTE es el color de la letra dentro del input */
+    border-color: var(--dark-border-color);
+}
+.form-control:focus, .form-select:focus {
+    background-color: #2a2a2a;
+    color: #f8f9fa;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+/* ------------------------------------ */
+/* ESTILOS ESPECÍFICOS DE LOGIN */
+/* ------------------------------------ */
+
+/* Asegura que el contenedor de login tenga un ancho manejable y centrado */
+.login-container {
+    max-width: 400px; /* Ancho máximo */
+}
+
+/* Si usaste las clases d-flex, vh-100 en el body, esto asegura que el contenido esté centrado */
+.vh-100 {
+    min-height: 100vh;
+}
